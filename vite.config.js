@@ -4,5 +4,11 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   base: "/positivus/",
+  build: {
+    outDir: "dist",
+  },
+  server: {
+    historyApiFallback: true,
+  },
   plugins: [react(), svgr()],
 });
