@@ -1,6 +1,16 @@
+import { motion } from "framer-motion";
 import SectionTab from "../../SectionTab/SectionTab";
 import { valuesTabProps } from "../../Service/ServicesSettings";
 import { CoreValuesSettings } from "./CoreValuesSettings";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: index * 0.2 },
+  }),
+};
 
 const CoreValues = () => {
   return (
@@ -13,10 +23,15 @@ const CoreValues = () => {
         />
 
         <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-20">
-          {CoreValuesSettings.map(({ title, img: Img, desc }) => (
-            <div
+          {CoreValuesSettings.map(({ title, img: Img, desc }, index) => (
+            <motion.div
               key={title}
-              className="flex lg:h-[330px]  flex-col rounded-[45px] border-[#191a23]  border shadow-[0px_5px_0px_0px_#191a23]  p-10 gap-5 items-center text-center lg:flex-row lg:items-start lg:text-left   transition-all duration-[600ms] ease-in-out hover:shadow-[5px_5px_5px_5px_#191a23]"
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              custom={index}
+              className="flex lg:h-[330px] flex-col rounded-[45px] border-[#191a23] border shadow-[0px_5px_0px_0px_#191a23] p-10 gap-5 items-center text-center lg:flex-row lg:items-start lg:text-left transition-all duration-[600ms] ease-in-out hover:shadow-[5px_5px_5px_5px_#191a23]"
             >
               <div className="lg:flex-1">
                 <h3 className="text-2xl flex justify-start items-start md:text-3xl font-medium">
@@ -27,11 +42,11 @@ const CoreValues = () => {
               </div>
 
               {Img && (
-                <div className="lg:flex-1 ">
+                <div className="lg:flex-1">
                   <Img className="w-full h-full" />
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

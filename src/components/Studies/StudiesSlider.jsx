@@ -27,16 +27,19 @@ const StudiesSlider = () => {
         className="pb-4"
       >
         {StudiesSettings.map(({ text }, index) => (
-          <motion.SwiperSlide
-            key={index}
-            className="w-full flex gap-6"
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: index * 0.5 }}
-            viewport={{ once: true }}
-          >
-            <motion.div className="flex py-[42px] h-[265px] lg:h-auto  px-[50px] lg:py-[70px] lg:px-[60px] items-center gap-16  mb-[60px] lg:mb-[140px] rounded-[45px] bg-[#191a23]">
-              <div className="gap-16 flex items-center " key={index}>
+          <SwiperSlide key={index} className="w-full flex gap-6">
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeOut",
+                delay: index * 0.5,
+              }}
+              viewport={{ once: true }}
+              className="flex py-[42px] h-[265px] lg:h-auto px-[50px] lg:py-[70px] lg:px-[60px] items-center gap-16 mb-[60px] lg:mb-[140px] rounded-[45px] bg-[#191a23]"
+            >
+              <div className="gap-16 flex items-center">
                 <div className="flex flex-col items-start gap-5">
                   <p className="w-full text-base text-[#fff]">{text}</p>
                   <a
@@ -49,7 +52,7 @@ const StudiesSlider = () => {
                 </div>
               </div>
             </motion.div>
-          </motion.SwiperSlide>
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>
