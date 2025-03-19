@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
 const SectionTab = ({ title, desc, className, parts, id }) => {
   const markupTitle = (() => {
@@ -25,22 +26,26 @@ const SectionTab = ({ title, desc, className, parts, id }) => {
   })();
 
   return (
-    <div
+    <motion.div
       id={id}
       className={`flex items-center text-center flex-col md:flex-row  md:gap-10 ${className}`}
+      initial={{ x: -40, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1.5, ease: "easeOut" }}
+      viewport={{ once: true }} 
     >
       {markupTitle}
       <p className="  text-base md:w-[580px] md:text-lg text-center md:text-left leading-6">
         {desc}
       </p>
-    </div>
+    </motion.div>
   );
 };
 
 SectionTab.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  parts: PropTypes.arrayOf(PropTypes.string), 
+  parts: PropTypes.arrayOf(PropTypes.string),
   className: PropTypes.string,
   id: PropTypes.string,
 };

@@ -1,6 +1,8 @@
 import heroIllustration from "../../assets/header-img.svg";
 import LinkBtn from "../../LinkBtn/LinkBtn";
 import LogoSlider from "./LogoSlider";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <section id="hero" className="pb-[60px] md:pb-[70px]">
@@ -23,7 +25,11 @@ const Hero = () => {
             marketing, and content creation.
           </p>
 
-          <LinkBtn mode="primary" link="#form" className={"md:w-fit area-button"}>
+          <LinkBtn
+            mode="primary"
+            link="#form"
+            className={"md:w-fit area-button"}
+          >
             Book a consultation
           </LinkBtn>
         </div>
