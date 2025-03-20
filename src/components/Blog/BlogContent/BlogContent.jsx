@@ -1,13 +1,18 @@
 import SarahImg from "../../../assets/emilyv.png";
 import { BlogContentSettings } from "./BlogContentSettings";
-import Star from "../../../assets/start-black.svg?react";
+import Star from "../../../assets/start-black.svg";
+
 const BlogContent = () => {
   return (
     <section id="blog-content" className="pb-[60px] md:pb-[140px]">
       <div className="px-5 mx-auto md:px-[35px] lg:px-[60px] xl:px-[100px]">
         <div className="flex justify-between mt-6 lg:mt-0 lg:px-10">
           <div className="flex gap-[10px]">
-            <SarahImg className="w-[56px] h-[60px] lg:w-[74px] lg:h-[80px]" />
+            <img
+              src={SarahImg}
+              alt="Sarah Kim"
+              className="w-[56px] h-[60px] lg:w-[74px] lg:h-[80px]"
+            />
             <div className="flex flex-col justify-center">
               <h4 className="text-lg lg:text-xl">Sarah Kim</h4>
               <p className="text-lg lg:text-xl">Content Creator</p>
@@ -19,14 +24,14 @@ const BlogContent = () => {
             <p className="text-2xl text-[#908f8f]">A</p>
           </div>
         </div>
-        <hr className="w-full h-[2px] mt-6 mb-12  lg:my-10 bg-black" />
+        <hr className="w-full h-[2px] mt-6 mb-12 lg:my-10 bg-black" />
         <div className="lg:px-[185px]">
           <h4 className="text-lg lg:text-2xl font-medium mb-10 lg:mb-[70px] text-justify">
             In the ever-evolving digital landscape, businesses are faced with an
             important question: should they invest in pay-per-click (PPC)
             advertising or focus on organic marketing strategies? While both
             approaches have their merits, choosing the right one depends on your
-            goals, budget, and timeline. Let`s dive into the strengths,
+            goals, budget, and timeline. Let’s dive into the strengths,
             challenges, and real-world applications of PPC and organic marketing
             to help you make an informed decision.
           </h4>
@@ -110,7 +115,7 @@ const BlogContent = () => {
           )}
         </div>
         <div className="flex justify-center items-center">
-          <Star />
+          <img src={Star} alt="Star icon" className="w-6 h-6" />
         </div>
       </div>
     </section>
