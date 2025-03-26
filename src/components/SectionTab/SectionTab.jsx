@@ -19,7 +19,7 @@ const SectionTab = ({ title, desc, className, parts, id }) => {
     }
 
     return (
-      <h2 className="bg-[#b9ff66] inline-block text-4xl leading-9 md:text-[40px] md:leading-10 mb-7 md:mb-0 border border-[#b9ff66] px-2 rounded-[7px]">
+      <h2 className="bg-[#b9ff66] inline-block text-4xl md:text-[40px] md:leading-10 mb-7 md:mb-0 border border-[#b9ff66] px-2 rounded-[7px]">
         {title}
       </h2>
     );

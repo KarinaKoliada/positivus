@@ -28,11 +28,11 @@ const UseCases = ({ setting, className }) => {
               )}
               <p className=" text-lg text-[#fff]">{text}</p>
               <a
-                className="text-xl text-[#b9ff66] flex gap-4 items-center"
+                className="group text-xl text-[#b9ff66] flex gap-4 items-center"
                 href="#"
               >
                 Learn more
-                <GreenArrow />
+                <GreenArrow className="w-6 h-6 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
               </a>
             </div>
             {line && <p className={`w-[1px] ${className} bg-[#fff]`}>{line}</p>}

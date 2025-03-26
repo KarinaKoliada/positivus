@@ -55,7 +55,7 @@ const Journey = () => {
               </div>
 
               <motion.div
-                className="pl-16 lg:px-[120px] flex py-10 flex-col items-start gap-5 rounded-[45px] border max-w-[600px] border-[#191A23] bg-[#191A23]"
+                className="pl-16 pr-5 lg:px-[120px] flex py-10 flex-col items-start gap-5 rounded-[45px] border max-w-[600px] border-[#191A23] bg-[#191A23]"
                 variants={fadeInUp}
                 custom={index + 1}
               >

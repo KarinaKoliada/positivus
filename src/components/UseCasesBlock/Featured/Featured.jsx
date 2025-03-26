@@ -51,9 +51,9 @@ const Featured = () => {
             >
               <a
                 href="#"
-                className="relative flex justify-start items-center gap-[15px] text-[#B9FF66] font-medium text-xl"
+                className="group relative flex justify-start items-center gap-[15px] text-[#B9FF66] font-medium text-xl"
               >
-                <ArrowBtn className="w-10 h-10" />
+                <ArrowBtn className="w-10 h-10 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
                 <span>Read</span>
               </a>
             </motion.div>
@@ -81,10 +81,10 @@ const Featured = () => {
             >
               <a
                 href="#"
-                className="relative flex justify-start items-center gap-[15px] text-[#B9FF66] font-medium text-xl"
+                className="group relative flex justify-start items-center gap-[15px] text-[#B9FF66] font-medium text-xl"
               >
-                <ArrowBtn className="w-10 h-10" />
-                <span>Read</span>
+                <ArrowBtn className="w-10 h-10 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
+                <span className="group-hover:underline">Read</span>
               </a>
             </motion.div>
           </motion.div>

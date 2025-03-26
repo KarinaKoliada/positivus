@@ -27,9 +27,9 @@ const CardsGrid = ({ setting }) => {
             <p className="text-base gap-5">{desc}</p>
             <a
               href="#"
-              className="relative flex items-center gap-[15px] text-xl"
+              className="group relative flex items-center gap-[15px] text-xl"
             >
-              <ArrowBtn className="w-10 h-10" />
+              <ArrowBtn className="w-10 h-10 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
               <span className="text-xl">Learn more</span>
             </a>
           </motion.div>

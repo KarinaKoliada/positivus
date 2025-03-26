@@ -94,12 +94,12 @@ const ServiceItem = ({ title1, title2, theme, img, alt }) => {
         className="area-button flex justify-start md:justify-center mt-auto gap-1"
       >
         <a
-          className="border-none cursor-pointer flex gap-4 hover:bg-transparent items-center"
+          className="group border-none cursor-pointer flex gap-4 hover:bg-transparent items-center"
           style={{ color: themeSettings.textColor }}
           href="#form"
         >
           <div
-            className="rounded-full w-10 h-10 flex justify-center items-center"
+            className="rounded-full w-10 h-10 flex justify-center items-center transition-transform duration-300 ease-in-out group-hover:rotate-45"
             style={{ backgroundColor: themeSettings.ArrowBackgroundColor }}
           >
             <ArrowBtn style={{ color: themeSettings.ArrowColor }} />
