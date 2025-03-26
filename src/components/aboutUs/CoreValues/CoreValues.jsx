@@ -19,7 +19,7 @@ const CoreValues = () => {
         <SectionTab
           title={valuesTabProps.title}
           desc={valuesTabProps.desc}
-          className="mb-[40px] lg:mb-[60px] xl:mb-[80px]"
+          className="pb-[40px] lg:pb-[60px] xl:pb-[80px]"
         />
 
         <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-20">

@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="mb-[60px] w-full px-0 scroll-mt-5 bg-[#191a23] lg:bg-transparent"
+      className="w-full px-0 scroll-mt-5 bg-[#191a23] lg:bg-transparent"
     >
       <div className="px-5 mx-auto md:px-[35px] lg:px-[60px] xl:px-[100px]">
         <div className="px-5 pt-[50px] pb-[30px] mx-auto md:px-[40px] lg:px-[60px] bg-[#191a23] rounded-[45px_45px_0px_0px] xl:p-[55px_60px_50px_60px]">

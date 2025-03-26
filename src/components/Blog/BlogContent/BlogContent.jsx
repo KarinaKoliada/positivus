@@ -50,17 +50,18 @@ const BlogContent = () => {
 
                 <p className="mb-10 text-lg">{text}</p>
                 {subText && <p className="mb-10 text-lg">{subText}</p>}
-                <ul className="list-disc pl-[16px]">
-                  {parts &&
-                    parts.map((part, idx) => (
+                {parts && (
+                  <ul className="list-disc pl-[16px]">
+                    {parts.map((part, idx) => (
                       <li key={idx} className="text-lg text-[#555] mb-5">
                         {part}
                       </li>
                     ))}
-                </ul>
-                <div className="flex flex-col lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-5 w-full lg:mb-10">
-                  {smallCards &&
-                    smallCards.map(
+                  </ul>
+                )}
+                {smallCards && (
+                  <div className="flex flex-col lg:flex lg:flex-row lg:flex-wrap lg:justify-between gap-5 w-full lg:mb-10">
+                    {smallCards.map(
                       (
                         {
                           title,
@@ -109,7 +110,8 @@ const BlogContent = () => {
                         </div>
                       )
                     )}
-                </div>
+                  </div>
+                )}
               </div>
             )
           )}

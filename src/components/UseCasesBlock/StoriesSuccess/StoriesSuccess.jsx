@@ -10,7 +10,7 @@ const StoriesSuccess = () => {
         <SectionTab
           title={allSuccessStories.title}
           desc={allSuccessStories.desc}
-          className="mb-[40px] md:mb-[85px]"
+          className="pb-[40px] md:pb-[85px]"
         />
         <CardsGrid setting={StoriesSettings} />
       </div>

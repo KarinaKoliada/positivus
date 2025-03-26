@@ -6,14 +6,14 @@ const ContactUs = () => {
   return (
     <section
       id="contact-us"
-      className="mb-[90px] md:mb-[110px] lg:mb-[125px] xl:pb-[140px] scroll-mt-5 "
+      className="pb-[90px] md:pb-[110px] lg:pb-[125px] xl:pb-[140px] scroll-mt-5 "
     >
       <div className="px-5 mx-auto md:px-[35px] lg:px-[60px] xl:px-[100px] ">
         <SectionTab
           id="form"
           title={contactTabProps.title}
           desc={contactTabProps.desc}
-          className="mb-[40px] md:mb-[85px]"
+          className="pb-[40px] md:pb-[85px]"
         />
         <Form />
       </div>

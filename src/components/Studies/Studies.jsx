@@ -10,7 +10,7 @@ const Studies = () => {
         <SectionTab
           title={casesTabProps.title}
           desc={casesTabProps.desc}
-          className={" mb-[60px] lg:mb-[70px] xl:mb-[85px]"}
+          className={" pb-[60px] lg:pb-[70px] xl:pb-[85px]"}
         />
         <UseCases setting={StudiesSettings} className={"h-64"} />
         <div className="block lg:hidden">

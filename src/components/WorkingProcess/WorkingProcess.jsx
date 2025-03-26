@@ -12,7 +12,7 @@ const WorkingProcess = () => {
           title={workingTabProps.title}
           desc={workingTabProps.desc}
           parts={workingTabProps.parts}
-          className="mb-8 md:mb-10 lg:mb-16 xl:mb-[80px]"
+          className="pb-8 md:pb-10 lg:pb-16 xl:pb-[80px]"
         />
 
         <motion.ul

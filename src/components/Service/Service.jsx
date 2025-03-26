@@ -10,7 +10,7 @@ const Service = () => {
           <SectionTab
             title={serviceTabProps.title}
             desc={serviceTabProps.desc}
-            className={"mb-[40px] lg:mb-[60px] xl:mb-[80px]"}
+            className={"pb-[40px] lg:pb-[60px] xl:pb-[80px]"}
           />
         <ServicesCards settings={ServicesSettings}/>
 

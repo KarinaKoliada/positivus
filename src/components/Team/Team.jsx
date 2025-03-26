@@ -10,7 +10,7 @@ const Team = () => {
         <SectionTab
           title={teamTabProps.title}
           desc={teamTabProps.desc}
-          className={"mb-[60px] lg:mb-[70px] xl:mb-[80px]"}
+          className={"pb-[60px] lg:pb-[70px] xl:pb-[80px]"}
         />
         <div className=" grid grid-cols-1 gap-5 lg:grid-cols-3 md:gap-[40px]">
           {TeamSettings.map(({ name, position, experience, img }, index) => (
@@ -37,7 +37,7 @@ const Team = () => {
             </div>
           ))}
         </div>
-        <div className="py-[40px]  mb-[60px] flex justify-end">
+        <div className="py-[50px] flex justify-end">
           <LinkBtn mode="primary" link="#" className={"md:w-fit"}>
             See all team
           </LinkBtn>

@@ -50,8 +50,8 @@ const MySwiper = () => {
                 alt="Border Frame"
                 className="w-full object-contain block md:hidden"
               />
-              <div className="absolute inset-0 flex justify-center items-center p-[20px] md:p-[50px] text-white text-center max-h-[80%] overflow-hidden">
-                <p className="text-[16px]  md:text-[18px] leading-normal text-left">
+              <div className="absolute inset-0 flex justify-center items-center p-[10px] md:p-[50px] text-white text-center max-h-[80%]">
+                <p className="text-[10px] leading-[13px] md:text-lg text-left">
                   {text}
                 </p>
               </div>

@@ -1,14 +1,24 @@
 import PropTypes from "prop-types";
 import GreenArrow from "../assets/green-arrow.svg?react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 const UseCases = ({ setting, className }) => {
   return (
     <div className="hidden lg:block justify-center">
       <div className="flex py-[70px] px-[60px] items-center gap-16 mb-[140px] rounded-[45px] bg-[#191a23]">
         {setting.map(({ text, line, title }, index) => (
-          <div
-            className="w-full xl:gap-16 lg:gap-12 md:gap-9 flex items-center "
+          <motion.div
+            className="w-full xl:gap-16 lg:gap-12 md:gap-9 flex items-center"
             key={index}
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ delay: index * 0.2 }}
           >
             <div className="flex flex-col items-start gap-5">
               {title && (
@@ -26,12 +36,13 @@ const UseCases = ({ setting, className }) => {
               </a>
             </div>
             {line && <p className={`w-[1px] ${className} bg-[#fff]`}>{line}</p>}
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
   );
 };
+
 UseCases.propTypes = {
   setting: PropTypes.arrayOf(
     PropTypes.shape({
@@ -46,4 +57,5 @@ UseCases.propTypes = {
 UseCases.defaultProps = {
   className: "",
 };
+
 export default UseCases;

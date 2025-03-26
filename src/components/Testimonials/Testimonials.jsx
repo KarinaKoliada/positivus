@@ -13,7 +13,7 @@ const Testimonials = ({ className }) => {
         <SectionTab
           title={testimonialTabProps.title}
           desc={testimonialTabProps.desc}
-          className={"mb-10 md:mb-[85px]"}
+          className={"pb-10 md:pb-[85px]"}
         />
         <MySwiper />
       </div>

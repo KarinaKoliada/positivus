@@ -11,7 +11,7 @@ const ServicesCases = () => {
         <SectionTab
           title={useCaseTabProps.title}
           desc={useCaseTabProps.desc}
-          className="mb-[40px] md:mb-[85px]"
+          className="pb-[40px] md:pb-[85px]"
         />
         <UseCases setting={ServicesCasesSettings} className={"h-80"}/>
         <div className="block lg:hidden">

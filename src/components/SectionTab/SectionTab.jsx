@@ -5,10 +5,10 @@ const SectionTab = ({ title, desc, className, parts, id }) => {
   const markupTitle = (() => {
     if (parts) {
       return (
-        <h2>
+        <h2 className="flex flex-col mb-7">
           {parts.map((part) => (
             <span
-              className="bg-[#b9ff66] inline-block text-4xl md:text-[40px] md:leading-10 mb-7 md:mb-0 border border-[#b9ff66] px-2 rounded-[7px]"
+              className="bg-[#b9ff66] inline-block text-4xl md:text-[40px] md:leading-10  border border-[#b9ff66] px-2 rounded-[7px]"
               key={part}
             >
               {part}
@@ -32,7 +32,7 @@ const SectionTab = ({ title, desc, className, parts, id }) => {
       initial={{ x: -40, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1.5, ease: "easeOut" }}
-      viewport={{ once: true }} 
+      viewport={{ once: true }}
     >
       {markupTitle}
       <p className="  text-base md:w-[580px] md:text-lg text-center md:text-left leading-6">
